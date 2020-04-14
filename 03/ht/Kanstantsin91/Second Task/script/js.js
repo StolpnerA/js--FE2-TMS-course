@@ -1,6 +1,6 @@
-let year = prompt('Введите год: ');
+let year = +prompt('Введите год (цыфрами): ');
 
-let month = prompt('Введите месяц: ');
+let month = +prompt('Введите месяц (цыфрами): ');
 
 let tagId = 'forCalendar';
 
@@ -21,7 +21,6 @@ function drawCalendar(year, month, tagId) {
             if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
                 numberOfDays = 29;
             } else numberOfDays = 28;
-
             break;
 
         default:
