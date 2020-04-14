@@ -7,7 +7,6 @@ function deepEquals(variableOne, variableTwo) {
     function variableToString(variable) {
         let objSrt = '';
 
-
         if (typeof variable == 'object' && variable != null) {
             for (let key in variable) {
                 if (typeof variable[key] == 'function') {
