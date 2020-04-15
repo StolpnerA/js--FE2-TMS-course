@@ -1,6 +1,9 @@
-let year = +prompt('Введите год (цыфрами): ');
+let year = +prompt('Введите год (цифрами): ');
+let month;
 
-let month = +prompt('Введите месяц (цыфрами): ');
+do {
+    month = +prompt('Введите месяц (цифрами от 1 до 12): ');
+} while (month < 1 || month > 12);
 
 let tagId = 'forCalendar';
 
