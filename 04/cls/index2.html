@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var data = [
+            {
+                firstName: 'Ashton',
+                lastName: 'Kutcher',
+                age: 40
+            },
+            {
+                firstName: 'Bradley',
+                lastName: 'Pitt',
+                age: 54
+            },
+            {
+                firstName: 'Bradley',
+                lastName: 'Pitt',
+                age: 54
+            },
+            {
+                firstName: 'Hannah',
+                lastName: 'Dakota',
+                age: 24
+            },
+        ];
+        const searchField = prompt('input name', 'Ashton');
+        for(let i = 0; i < data.length; i++) {
+            if (data[i].firstName === searchField || searchField === data[i].lastName) {
+                console.log(data[i]);
+            }
+        }
+    </script>
+</body>
+</html>

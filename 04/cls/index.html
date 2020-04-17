@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = [
+            {
+                firstName: 'Ashton',
+                lastName: 'Kutcher',
+                age: 40
+            },
+            {
+                firstName: 'Bradley',
+                lastName: 'Pitt',
+                age: 54
+            },
+            {
+                firstName: 'Bradley',
+                lastName: 'Pitt',
+                age: 54
+            },
+            {
+                firstName: 'Hannah',
+                lastName: 'Dakota',
+                age: 24
+            },
+        ];
+        const foundNames = [];
+        
+        const name = prompt('input name', 'Bradley');
+        
+        for(let i = 0; i < data.length; i++) {
+            if (data[i].firstName === name) {
+                foundNames.push(data[i]);
+            }
+        }
+
+        if (!foundNames.length) {
+            console.log('Nothing found');
+        } else {
+            for (let i = 0; i < foundNames.length; i++) {
+                console.log(foundNames[i]);
+            }
+        }
+    </script>
+</body>
+</html>
